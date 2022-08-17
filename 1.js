@@ -1,8 +1,8 @@
 // Задание 2
 // Запросите у пользователя его имя. Выведите в окошке (с помощью функции alert) фразу: Привет, Николай! (вместо Николай должно показываться имя, которое ввел пользователь)
 
-// let askedName = prompt('Введите ваше имя');
-// alert('Привет, ' + askedName + '!');
+let askedName = prompt('Введите ваше имя');
+alert('Привет, ' + askedName + '!');
 
 
 
@@ -10,10 +10,10 @@
 //Задание 3
 // Запросите у пользователя число. Затем запросите степень, в которую нужно возвести это число. Выведите в консоль результат.
 
-// let askedNumber = prompt('Введите число');
-// let askedDegree = prompt('Введите степень');
-// let total = askedNumber**askedDegree;
-// console.log(total);
+let askedNumber = prompt('Введите число');
+let askedDegree = prompt('Введите степень');
+let total = askedNumber**askedDegree;
+console.log(total);
 
 
 
@@ -21,14 +21,14 @@
 // Задание 5
 // Создать произвольную переменную, присвоить ей значение. C помощью if написать условие: если переменная равна “hidden”, присвоить ей значение “visible”, иначе - “hidden”.
 
-// let a = 'hidden';
+let a = 'hidden';
 
-// if (a === 'hidden'){
-//     a = 'visible'
-// } else{
-//     a = 'hidden'
-// }
-// console.log(a);
+if (a === 'hidden'){
+    a = 'visible'
+} else{
+    a = 'hidden'
+}
+console.log(a);
 
 
 
@@ -41,17 +41,17 @@
 // - если меньше нуля - строку “less then zero”;
 // - если больше нуля - используя оператор “присвоение”, переменную умножить на 10 (использовать краткую запись).
 
-// let a = 0;
+let a = 0;
 
-// if (a == 0){
-//     a = 1;
-// } else if (a < 0){
-//     a = 'less then zero';
-// } else {
-//     a = a * 10;
-// }
+if (a == 0){
+    a = 1;
+} else if (a < 0){
+    a = 'less then zero';
+} else {
+    a = a * 10;
+}
 
-// console.log(a);
+console.log(a);
 
 
 
@@ -61,17 +61,17 @@
 // (Не забывайте, что от пользователя мы всегда получаем строку).
 // Создайте переменную-результат и присвойте ей значение: если введенное пользователем число меньше 5, то результат будет '0', если больше -  '1'. Выведите результат в консоль.
 
-// let askedNumber = +prompt('Введите число');
+let askedNumber = +prompt('Введите число');
 
-// let total = 0;
+let total = 0;
 
-// if (askedNumber < 5){
-//     total = 0;
-// } else {
-//     total = 1;
-// }
+if (askedNumber < 5){
+    total = 0;
+} else {
+    total = 1;
+}
 
-// console.log(total);
+console.log(total);
 
 
 
@@ -80,16 +80,16 @@
 // Попросить пользователя ввести одно число, следом - второе число. Вывести в консоль максимальное из чисел (наибольшее) с текстом: Большее число: 7 (вместо 7 будет максимальное число из введенных пользователем).
 // * предусмотреть вариант ввода одинаковых чисел
 
-// let firstNumber = +prompt('Введите первое число');
-// let secondNumber = +prompt('Введите второе число');
+let firstNumber = +prompt('Введите первое число');
+let secondNumber = +prompt('Введите второе число');
 
-// if (firstNumber > secondNumber){
-//     console.log('Большее число: ' + firstNumber + '.');
-// } else if (firstNumber < secondNumber){
-//     console.log('Большее число: ' + secondNumber + '.');
-// } else{
-//     console.log('Подумай и введи разные числа');
-// }
+if (firstNumber > secondNumber){
+    console.log('Большее число: ' + firstNumber + '.');
+} else if (firstNumber < secondNumber){
+    console.log('Большее число: ' + secondNumber + '.');
+} else{
+    console.log('Подумай и введи разные числа');
+}
 
 
 
@@ -97,14 +97,14 @@
 // Задание 9
 // Определить, является ли введенное пользователем число num1 кратным введенному числу num2. Обе переменные запрашиваем у пользователя, ответ выводим в консоль.
 
-// let num1 = +prompt('Введите первое число');
-// let num2 = +prompt('Введите второе число');
+let num1 = +prompt('Введите первое число');
+let num2 = +prompt('Введите второе число');
 
-// if (num1%num2 == 0 ){
-//     console.log('Число ' + num1 + ' кратно числу ' + num2);
-// } else {
-//     console.log('Число ' + num1 + ' НЕ кратно числу ' + num2);
-// }
+if (num1%num2 == 0 ){
+    console.log('Число ' + num1 + ' кратно числу ' + num2);
+} else {
+    console.log('Число ' + num1 + ' НЕ кратно числу ' + num2);
+}
 
 
 
@@ -113,16 +113,16 @@
 // Запросить у пользователя средний балл, записать в переменную.
 // Если средний балл 1-4 - вывести в консоль "Двоечник, иди учись!", если 5-8 - "Неплохо, но давай еще поднажмем!", если 9-10 - "Ого, да ты настоящий отличник!" (можно другие фразы - по желанию).
 
-// let averageScore = +prompt('Введите ваш средний бал');
-// if (averageScore >= 1 && averageScore <= 4) {
-//     console.log("Двоечник, иди учись!");
-// } else if (averageScore >= 5 && averageScore <= 8){
-//     console.log("Неплохо, но давай еще поднажмем!");
-// } else if (averageScore >= 9 && averageScore <= 10){
-//     console.log("Ого, да ты настоящий отличник!");
-// } else{
-//     console.log('Введи число из диапазона 1..10');
-// }
+let averageScore = +prompt('Введите ваш средний бал');
+if (averageScore >= 1 && averageScore <= 4) {
+    console.log("Двоечник, иди учись!");
+} else if (averageScore >= 5 && averageScore <= 8){
+    console.log("Неплохо, но давай еще поднажмем!");
+} else if (averageScore >= 9 && averageScore <= 10){
+    console.log("Ого, да ты настоящий отличник!");
+} else{
+    console.log('Введи число из диапазона 1..10');
+}
 
 
 
@@ -137,18 +137,18 @@
 // - 0 во всех других случаях.
 
 
-// let usersScore = +prompt('Введите ваш балл (от 0 до 100)');
-// let finishedProjects = +prompt('Введите кол-во выполненных проектов (от 0 и больше)');
+let usersScore = +prompt('Введите ваш балл (от 0 до 100)');
+let finishedProjects = +prompt('Введите кол-во выполненных проектов (от 0 и больше)');
 
-// if (usersScore > 90 && finishedProjects > 10){
-//     console.log('Ваш общий выпускной балл: 100');
-// } else if (usersScore > 75 && finishedProjects >= 5){
-//     console.log('Ваш общий выпускной балл: 90');
-// } else if (usersScore > 50 && finishedProjects >= 2){
-//     console.log('Ваш общий выпускной балл: 75');
-// } else {
-//     console.log('Ваш общий выпускной балл: 0');
-// }
+if (usersScore > 90 && finishedProjects > 10){
+    console.log('Ваш общий выпускной балл: 100');
+} else if (usersScore > 75 && finishedProjects >= 5){
+    console.log('Ваш общий выпускной балл: 90');
+} else if (usersScore > 50 && finishedProjects >= 2){
+    console.log('Ваш общий выпускной балл: 75');
+} else {
+    console.log('Ваш общий выпускной балл: 0');
+}
 
 
 
@@ -159,20 +159,20 @@
 
 // Количество дней, на которые нужно арендовать авто, запрашиваются с помощью prompt. Напишите программу, рассчитывающую общую стоимость аренды на запрашиваемое количество дней.
 
-// let numberOfRentedDays = +prompt('Введите кол-во дней для аренды авто');
-// let total = 0;
-// let dailyCost = 40;
+let numberOfRentedDays = +prompt('Введите кол-во дней для аренды авто');
+let total = 0;
+let dailyCost = 40;
 
 
-// if (numberOfRentedDays >= 7){
-//     total = dailyCost * numberOfRentedDays - 50;  
-//     console.log('Ваша итоговая стоимость аренды составит ' + total + '$.');
-// } else if (numberOfRentedDays >= 3){
-//     total = dailyCost * numberOfRentedDays - 20;  
-//     console.log('Ваша итоговая стоимость аренды составит ' + total + '$.');
-// } else if(numberOfRentedDays < 3 && numberOfRentedDays > -1){
-//     total = dailyCost * numberOfRentedDays;
-//     console.log('Ваша итоговая стоимость аренды составит ' + total + '$.');
-// } else {
-//     console.log('Вы ввели неправильный срок аренды.');
-// }
+if (numberOfRentedDays >= 7){
+    total = dailyCost * numberOfRentedDays - 50;  
+    console.log('Ваша итоговая стоимость аренды составит ' + total + '$.');
+} else if (numberOfRentedDays >= 3){
+    total = dailyCost * numberOfRentedDays - 20;  
+    console.log('Ваша итоговая стоимость аренды составит ' + total + '$.');
+} else if(numberOfRentedDays < 3 && numberOfRentedDays > -1){
+    total = dailyCost * numberOfRentedDays;
+    console.log('Ваша итоговая стоимость аренды составит ' + total + '$.');
+} else {
+    console.log('Вы ввели неправильный срок аренды.');
+}
